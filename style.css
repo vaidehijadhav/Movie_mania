@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=PT+Serif:wght@400;700&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    color: #FFFAF0;
+    max-height: 70px;
+    justify-content: space-between;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul li{
+    padding: 15px 100px;  
+    position: relative;  
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #FFFAF0;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.menu ul li a:hover{
+    color: #2C74B3;
+}
+
+.dropdown_menu{
+    display: none;
+}
+.menu ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000000;
+}
+
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li{
+    width: 200px;
+    padding: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.search input{
+    all: unset;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: #2e2d2d;
+}
+
+.search input::placeholder{
+    color: #848482;
+}
