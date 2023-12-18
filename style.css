@@ -1,15 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=PT+Serif:wght@400;700&family=Ubuntu&display=swap');
-*{
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.main_container{
-    width: 100%;
+body{
+    min-height: 100vh;
+    background: url(./assest/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    color: #FFFAF0;
+}
+
+header.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+header.navbar ul{
+    list-style: none;
+    
+}
+
+
+
+
+
+/* .main_container{
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background: url(./assest/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .navbar{
@@ -20,9 +61,7 @@
     max-height: 70px;
     justify-content: space-evenly;
     position: relative;
-    /* overflow:hidden; */
 }
-
 
 .logo{
     display: flex;
@@ -69,13 +108,13 @@
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: #000000;
-    z-index: 1;
+    background-color: #2c2b2b;
+    z-index: -1;
 }
 
 .dropdown_menu ul{
     display: block;
-    margin: 10px;
+    margin: 5px;
 }
 
 .dropdown_menu ul li{
@@ -87,7 +126,7 @@
     display: flex;
     align-items: center;
     /* margin-right: 100px; */
-}
+/* }
 
 .search input{
     all: unset;
@@ -103,10 +142,7 @@
 .main{
     padding: 0;
     height: 100vh;
-    background: url(./assest/maxresdefault.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
 }
 
 .main .box{
@@ -135,5 +171,5 @@
     flex-direction: row;
     height: 100px;
     background-color: #000000;
-}
+} */
 
