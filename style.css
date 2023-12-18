@@ -20,7 +20,7 @@
     max-height: 70px;
     justify-content: space-evenly;
     position: relative;
-    /* overflow-x:hidden; */
+    /* overflow:hidden; */
 }
 
 
@@ -80,7 +80,7 @@
 
 .dropdown_menu ul li{
     width: 200px;
-    padding: 10px;
+    padding: 8px;
 }
 
 .search{
@@ -129,3 +129,11 @@
     font-size: 1.6rem;
     font-weight: 300;
 }
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #000000;
+}
+
