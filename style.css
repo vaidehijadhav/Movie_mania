@@ -34,13 +34,27 @@ header.logo{
     font-weight: 400;
 }
 
-header.navbar ul{
+header .navbar ul{
     list-style: none;
     
 }
 
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
 
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #FFFAF0;
+    text-decoration: none;
+    display: block;
+}
 
+header .navbar ul li a:hover{
+    color: #2C74B3;
+}
 
 
 /* .main_container{
