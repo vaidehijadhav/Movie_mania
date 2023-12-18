@@ -45,11 +45,17 @@ header .navbar ul li{
 }
 
 header .navbar ul li a{
-    font-size: 25px;
+    font-size: 24px;
     padding: 20px;
     color: #FFFAF0;
     text-decoration: none;
     display: block;
+}
+
+header .navbar ul li a img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 header .navbar ul li a:hover{
