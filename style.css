@@ -56,6 +56,18 @@ header .navbar ul li a:hover{
     color: #2C74B3;
 }
 
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #2c2b2b;
+    display: none;
+}
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
 
 /* .main_container{
     width: 100vw;
