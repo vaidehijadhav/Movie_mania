@@ -26,6 +26,7 @@ header{
     color: #FFFAF0;
     z-index: 1000;
     margin: 0 60px;
+    transition: all .3s ease;
 }
 
 .logo{
@@ -118,7 +119,7 @@ header .navbar ul li:hover > ul{
 h1{
     color: transparent;
     font-size: 7rem;
-    font-weight: 400;
+    font-weight: 600;
     position: relative;
     display: inline-block;
     animation: text .5s ease forwards;
@@ -127,7 +128,7 @@ h1{
 
 .content .cont{
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 h1 span{
@@ -157,6 +158,31 @@ h1:nth-child(2) span{
     animation-delay: 1.5s;
 }
 
+footer{
+    position: relative;
+    padding: 30px 60px;
+    z-index: 1000;
+    color: #FFFAF0;
+}
+
+.contain{
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.contain a{
+    text-decoration: none;
+    color: #FFFAF0;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+.contain a:hover{
+    color: #2C74B3;
+    
+}
 @keyframes overlay{
     50%{
         width: 100%;
