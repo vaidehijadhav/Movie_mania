@@ -8,6 +8,7 @@
 
 body{
     min-height: 100vh;
+    width: 100%;
     background: url(./assest/maxresdefault.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,45 +113,16 @@ header .navbar ul li:hover > ul{
 .content{
     color: #FFFAF0;
     text-align: center;
+}
+
+.content h1{
     font-size: 7rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .content .cont{
     font-size: 1.4rem;
     font-weight: 300;
 }
-/*.main{
-    padding: 0;
-    height: 100vh;
-    position: relative;
-}
 
-.main .box{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    padding: 10rem 8%;
-}
-
-.content{
-    color: #FFFAF0;
-    text-align: center;
-    font-size: 6rem;
-    font-weight: 500;
-}
-
-.content .cont{
-    font-size: 1.6rem;
-    font-weight: 300;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    background-color: #000000;
-} */
 
