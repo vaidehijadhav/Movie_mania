@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Mania</title>
     <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./style.css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -18,6 +19,33 @@
 </head>
 <body>
 
+    <header>
+        <div class="logo">
+            <img src="./assest/logo.jpg" alt="Logo image" height="50" width="60">
+            <p>Movie Mania</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Genre <img src="./assest/down-arrow (1).png" alt="+"></a>
+                    <ul>
+                        <li><a href="#">Action and Adventure</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Documentary</a></li>
+                        <li><a href="#">Horror</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="seacrh" name="seacrh">
+            <img src="./assest/search.png" alt="search_icon">
+        </div>
+    </header>
+
     <section class="contact">
         <div class="container">
             <h2>Contact Us!</h2>
@@ -25,15 +53,15 @@
             <form id="contactForm" action="#">
                 <div class="form">
                     <label for="fname">Name:</label>
-                    <input type="text" id="fname" name="fname" required>
+                    <input type="text" id="fname" name="fname" placeholder="Enter Full Name" required>
                     <span id="name_error_name" style="color: red;"></span>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter valid Email" required>
                     <span id="name_error_email" style="color: red;"></span>
 
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    <textarea name="message" id="message" placeholder="Write Your Suggestions, Queries, Feedback" required></textarea>
                     <span id="name_error_message" style="color: red;"></span>
 
                     <button type="button" onclick="sendEmail()">Submit</button>
