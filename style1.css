@@ -7,17 +7,19 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 
 section{
     width: 100%;
-    min-height: 100vh;
     padding: 90px 30px;
-    overflow: hidden;
-    background: hsla(240, 3%, 8%, 1);
+    /* background: hsla(240, 3%, 8%, 1);
     background: linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#131314", endColorstr="#1C4265", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#131314", endColorstr="#1C4265", GradientType=1 ); */
 }
 
 .container{
@@ -25,10 +27,14 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 800px;
+    width: 650px;
     margin: 0 auto;
-    background: #1b1b1b;
-    /* background: linear-gradient(90deg, #1b1b1b 0%, #1C4265 100%); */
+    padding: 20px;
+    background: hsla(240, 3%, 8%, 1);
+    background: linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#131314", endColorstr="#1C4265", GradientType=1 );
     
 }
 
@@ -38,22 +44,35 @@ section{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #F0F8FF;
 }
 
 h2{
     font-size: 32px;
-    font-weight: 600;
-    color: #FFFAF0;
+    font-weight: 750;
+    color: #F0F8FF;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
     letter-spacing: 3px;
 }
 
-.form .inputBox{
-    position: relative;
-    width: 90%;
-    height: 70px;
-    background: #1b1b1b;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+label{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.form input, textarea{
+    all: unset;
+    width: 100%;
+    /* height: 30px; */
+    padding: 10px;
+    border-bottom: 1px solid #F2F3F4;
+    font-size: 18px;
+    /* font-weight: 500; */
+    letter-spacing: 1.5px;
+}
+
+::placeholder{
+    color: #a2a2a2;
 }
