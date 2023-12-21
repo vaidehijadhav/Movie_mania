@@ -12,6 +12,12 @@ section{
     width: 100%;
     min-height: 100vh;
     padding: 90px 30px;
+    overflow: hidden;
+    background: hsla(240, 3%, 8%, 1);
+    background: linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(240, 3%, 8%, 1) 0%, hsla(209, 57%, 25%, 1) 66%, hsla(209, 62%, 43%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#131314", endColorstr="#1C4265", GradientType=1 );
 }
 
 .container{
@@ -19,10 +25,35 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    background: #1b1b1b;
+    /* background: linear-gradient(90deg, #1b1b1b 0%, #1C4265 100%); */
+    
 }
 
 .form{
-    width: 100%;
-    max-width: 500px;
-    padding: 40px;
+    width: 500px;
+    /* padding: 40px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFAF0;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+
+.form .inputBox{
+    position: relative;
+    width: 90%;
+    height: 70px;
+    background: #1b1b1b;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
