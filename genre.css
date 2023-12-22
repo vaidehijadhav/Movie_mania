@@ -59,3 +59,17 @@ a:hover{
     cursor: pointer;
     
 }
+
+@media screen and (max-width: 768px){
+    .box{
+        gap: 30px;
+    }
+    .card{
+        height: 100px;
+        padding: 10px;
+    }
+    .content{
+        font-size: 20px;
+
+    }
+}
