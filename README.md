@@ -2,6 +2,9 @@
 
 Movie Mania is a web project that showcases a collection of movies. It is built using HTML, CSS, and JavaScript technologies.
 
+## Demo
+https://movie-mania-vj.netlify.app
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -49,3 +52,4 @@ Create a new branch for your feature or bug fix.
 Make your changes and commit them with descriptive commit messages.
 Push your changes to your fork.
 Submit a pull request.
+
